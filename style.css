@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --Cyan: hsl(179, 62%, 43%);
+    --Bright-Yellow: hsl(71, 73%, 54%);
+    --Light-Gray: hsl(204, 43%, 93%);
+    --Grayish-Blue: hsl(218, 22%, 67%);
+}
+
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 16px;
+    font-family: 'Karla', sans-serif;
+    background-color: var(--Light-Gray);
+}
+main {
+    min-width: 315px;
+    max-width: 515px;
+    min-height: 725px;
+    max-height: 725px;
+    margin: 70px 30px;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 2px 2px 5px;
+}
+
+/* ?-----------------HEADER SECTION----------------- */
+.header-section {
+    width: 100%;
+    height: 270px;
+    padding: 28px 23px;
+    background-color: white;
+}
+.header-section h1 {
+    color: var(--Cyan);
+    font-size: 20px;
+}
+.header-section h2 {
+    margin-top: 26px;
+    color: var(--Bright-Yellow);
+    font-size: 16px;
+}
+.header-section p {
+    margin-top: 20px;
+    line-height: 26px;
+    font-size: 14px;
+    color: var(--Grayish-Blue);
+}
+
+/* ?-----------------CYAN SECTION----------------- */
+
+/* ?-----------------BOX1----------------- */
+.cyan-section {
+    width: 100%;
+    height: 455px;
+}
+.cyan-section .box1 {
+    width: 100%;
+    height: 227.5px;
+    padding: 26px 23px;
+    background-color: var(--Cyan);
+}
+.box1 h3 {
+    font-size: 16px;
+    color: var(--Light-Gray);
+}
+.box1 .box1-div {
+    margin-top: 18px;
+    display: flex;
+}
+.box1-div .price {
+    font-size: 34px;
+    font-weight: 700;
+    color: var(--Light-Gray);
+}
+.box1-div .month {
+    margin: 11px 0 0 12px;
+    color: var(--Light-Gray);
+    font-weight: 400;
+    font-size: 15px;
+}
+.box1 p {
+    margin-top: 10px;
+    color: var(--Light-Gray);
+}
+.box1 button {
+    width: 263px;
+    height: 46px;
+    margin: 25px auto;
+    background-color: var(--Bright-Yellow);
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/* ?-----------------BOX2----------------- */
+.cyan-section .box2 {
+    width: 100%;
+    height: 227.5px;
+    padding: 23px 20px;
+    background-color: hsl(179, 66%, 46%);
+}
+
+.box2 h3 {
+    color: var(--Light-Gray);
+}
+ul {
+    margin-top: 18px;
+    font-size: 13px;
+    line-height: 20px;
+    color: var(--Light-Gray);
+    list-style: none;
+}
+
+/* ?-----------------FOOTER----------------- */
+footer{
+    margin: -25px auto 25px auto;
+}
+.attribution {
+    font-size: 15px; text-align: center;
+}
+.attribution a {
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--Cyan);
+}
+
+/* ?-----------------MEDIA QUERIES----------------- */
+
+/* ?---------721px--------- */
+@media only screen and (min-width: 620px) {
+    main {
+        text-align: center;
+    }
+    .box1-div {
+        margin-left: 162px;
+    }
+    .attribution {
+        font-size: 17px; text-align: center;
+    }
+}
+
+/* ?---------1080px--------- */
+@media only screen and (min-width: 1080px) {
+    main {
+        min-width: 636px;
+        max-width: 636px;
+        min-height: 476px;
+        max-height: 476px;
+        text-align: left;
+    }
+    .header-section {
+        width: 100%;
+        height: 216px;
+        padding: 42px;
+    }
+    .header-section h1 {
+        font-size: 25px;
+    }
+    .header-section h2 {
+        font-size: 20px;
+    }
+    .header-section p {
+        font-size: 16px;
+    }
+    .cyan-section {
+        display: flex;
+    }
+    .cyan-section .box1 {
+        min-width: 318px;
+        min-width: 318px;
+        min-height: 260px;
+        max-height: 260px;
+        padding: 42px;
+    }
+    .cyan-section .box2 {
+        min-width: 318px;
+        min-width: 318px;
+        min-height: 260px;
+        max-height: 260px;
+        padding: 42px;
+    }
+    .box1-div {
+        margin-left: 0;
+    }
+    .box1 button {
+        width: 238px;
+    }
+    .box1 p {
+        font-size: 15px;
+    }
+    .box1 h3 {
+        font-size: 19px;
+    }
+}
